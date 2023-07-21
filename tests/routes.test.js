@@ -24,7 +24,7 @@ describe("Post Movie", () => {
       })
       .set("Authorization", `Bearer ${access_token}`);
     expect(res.statusCode).toEqual(200);
-    expect(res.body.code).toEqual(true);
+    expect(res.body.status).toEqual(true);
   });
 });
 
@@ -42,7 +42,7 @@ describe("Get One Data Movie", () => {
       .get(`/movies/${movieId}`)
       .set("Authorization", `Bearer ${access_token}`);
     expect(res.statusCode).toEqual(200);
-    expect(res.body.code).toEqual(true);
+    expect(res.body.status).toEqual(true);
   });
 });
 
@@ -59,7 +59,7 @@ describe("Get All Data Movie", () => {
       .get("/movies")
       .set("Authorization", `Bearer ${access_token}`);
     expect(res.statusCode).toEqual(200);
-    expect(res.body.code).toEqual(true);
+    expect(res.body.status).toEqual(true);
   });  
 });
 
@@ -87,7 +87,7 @@ describe("PATCH Data Movie", () => {
       .set("Authorization", `Bearer ${access_token}`);
 
     expect(res.statusCode).toEqual(200);
-    expect(res.body.code).toEqual(true);
+    expect(res.body.status).toEqual(true);
   });
 });
 
@@ -105,6 +105,6 @@ describe("Delete Data Movie", () => {
       .delete(`/movies/${movieId}`)
       .set("Authorization", `Bearer ${access_token}`);
     expect(res.statusCode).toEqual(200);
-    expect(res.body.code).toEqual(true);
+    expect(res.body.status).toEqual(true);
   });
 });
