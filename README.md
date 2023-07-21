@@ -7,12 +7,13 @@ Here there are several features such as storing data logs using Winston and Gray
 # How to install
 
 **Step 1 :**
-```bash
 Open CLI (Command Line Interface), after that
-
-Clone Repo : git clone https://github.com/rizkyefrian2706/Restfull-API-Movie.git
-
+Clone Repo : 
+```bash
+$ git clone https://github.com/rizkyefrian2706/Restfull-API-Movie.git
+```
 then go into the folder :
+```bash
 cd Restfull-API-Movie
 ```
 
@@ -26,54 +27,60 @@ Open Redis Server and Running
 ```
 
 **Step 3 :**
-```bash
 Open CLI (Command Line Interface) project, install Package Node Modules Project
 
 in project install node js : 
-npm install
-
-setup and running grayLog to docker: 
-docker-compose up -d
-
-create database by sequelize
-npx sequelize-cli db:create
-npx sequelize-cli db:migrate
-
-the installation process and database configuration is complete.
+```bash
+$ npm install
 ```
+setup and running grayLog to docker: 
+```bash
+$ docker-compose up -d
+```
+create database by sequelize
+```bash
+$ npx sequelize-cli db:create
+$ npx sequelize-cli db:migrate
+```
+the installation process and database configuration is complete.
 
 # Unit Test
 
-```bash
 in project running Unit Testing with Jest & Supertest
-
-npm run test
+```bash
+$ npm run test
 ```
 
 # Running Project test by Postman
 
-```bash
 in project running apps
-
+```bash
 npm run serve
-
+```
 Endpoint API: 
+```bash
 http://localhost:3001
-
+```
 Endpoint GrayLog
+```bash
 http://localhost:9000
-
+```
 For access Login to GrayLog
+```bash
 Username : admin
 Password : admin
-
+```
 to be able to hit the api movie url make sure the api get token has been hit
 curl getToken:
+```bash
 curl --location 'http://localhost:3001/getToken' \
 --header 'Authorization: 0e4f1786-daed-3ead-ad6c-3bdc37d39256'
+```
+https://github.com/rizkyefrian2706/Restfull-API-Movie/issues/1#issue-1815015339
 
 after getting the token, use the token in the Authorization header of each api.
 sample curl get all data:
+```bash
 curl --location 'http://localhost:3001/movies' \
 --header 'Authorization: Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjoiMGU0ZjE3ODYtZGFlZC0zZWFkLWFkNmMtM2JkYzM3ZDM5MjU2IiwiaWF0IjoxNjg5ODk4NDE1LCJleHAiOjE2ODk5MDIwMTV9.RElTPdl2_tAPX0pCneAOgPUp03O_88Fz2hVoSyIbKPqu6iwJoKIQhD_oL1aeuiZezfOTWRruSj4pflnjntDHyg'
 ```
