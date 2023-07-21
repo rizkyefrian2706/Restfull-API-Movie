@@ -19,21 +19,21 @@ exports.getToken = (req, res) => {
                 });
                 await Redis.set('access_token', token); 
                 res.json({
-                    code : true,
+                    status : true,
                     data : token,
                     message : "success"
                 }); 
             } else { 
                 await Redis.set('access_token', ""); 
                 res.json({
-                    code : false,
+                    status : false,
                     data : "",
                     message : "Unauthorized"
                 });
             }
         } catch (error) {
             res.json({
-                code : false,
+                status : false,
                 data : error.message,
                 message : error.message 
             });

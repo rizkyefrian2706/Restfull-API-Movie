@@ -20,7 +20,7 @@ exports.index = (req, res) => {
     .then(function (result) {
         logDatas("Get Data Movie", result, "info")
         res.json({
-            code : true,
+            status : true,
             data : result,
             message : "success"
         });
@@ -28,7 +28,7 @@ exports.index = (req, res) => {
     .catch(function (error) {
         logDatas("Get Data Movie", error.message, "error")
         res.json({
-            code : false,
+            status : false,
             data : error.message,
             message : error.message 
         });
@@ -42,7 +42,7 @@ exports.show = (req, res) => {
     .then(function (result) {
         logDatas("Get One Data Movie", result, "info")
         res.json({
-            code : true,
+            status : true,
             data : result,
             message : "success"
         });
@@ -50,7 +50,7 @@ exports.show = (req, res) => {
     .catch(function (error) {
         logDatas("Get One Data Movie", error.message, "error")
         res.json({
-            code : false,
+            status : false,
             data : error.message,
             message : error.message 
         });
@@ -63,7 +63,7 @@ exports.create = (req, res) => {
     .then(function (result) {
         logDatas("Post Data Movie", result, "info")
         res.json({
-            code : true,
+            status : true,
             data : result,
             message : "success"
         });
@@ -71,7 +71,7 @@ exports.create = (req, res) => {
     .catch(function (error) {
         logDatas("Post Data Movie", error.message, "error")
         res.json({
-            code : false,
+            status : false,
             data : error.message,
             message : error.message 
         });
@@ -86,7 +86,7 @@ exports.update = (req, res) => {
         let resp = { id: id}
         logDatas("Update Data Movie", resp, "info")
         res.json({
-            code : true,
+            status : true,
             data : result,
             message : "id : " + id
         });
@@ -94,7 +94,7 @@ exports.update = (req, res) => {
     .catch(function (error) {
         logDatas("Update Data Movie", error.message, "error")
         res.json({
-            code : false,
+            status : false,
             data : error.message,
             message : error.message 
         });
@@ -118,7 +118,7 @@ exports.delete = (req, res) => {
         }
         logDatas("Delete Data Movie", resData, "info")
         res.json({
-            code : true,
+            status : true,
             data : resData,
             message : "success"
         });
@@ -126,7 +126,7 @@ exports.delete = (req, res) => {
     .catch(function (error) {
         logDatas("Delete Data Movie", error.message, "error")
         res.json({
-            code : false,
+            status : false,
             data : error.message,
             message : error.message 
         });
