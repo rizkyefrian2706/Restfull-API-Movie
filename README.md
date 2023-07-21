@@ -1,8 +1,8 @@
 # Movie RESTFull API 
-```bash
+
 Movie RESTFull API is built using ExpressJs, Sequelize and Mysql as the database.
 Here there are several features such as storing data logs using Winston and Graylog, Authentication each api url using JWT, Validation Request fields, using Redis as Token storage media and using Jest & Supertest for Unit Test media.
-```
+
 
 # How to install
 
@@ -17,11 +17,12 @@ cd Restfull-API-Movie
 ```
 
 **Step 2 :**
+install mySQL and [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/)
+in my case use [Xampp](https://www.apachefriends.org/download.html)
 ```bash
-running mySql and redis
-in my case use [Xampp](https://github.com/rizkyefrian2706/Restfull-API-Movie).
+running mySql
 
-Open [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/) Server and Running
+Open Redis Server and Running
 ```
 
 **Step 3 :**
@@ -41,7 +42,7 @@ npx sequelize-cli db:migrate
 the installation process and database configuration is complete.
 ```
 
-**Unit Test :**
+# Unit Test
 
 ```bash
 in project running Unit Testing with Jest & Supertest
@@ -49,7 +50,7 @@ in project running Unit Testing with Jest & Supertest
 npm run test
 ```
 
-**Running Project test by Postman:**
+# Running Project test by Postman
 
 ```bash
 in project running apps
@@ -77,7 +78,7 @@ curl --location 'http://localhost:3001/movies' \
 --header 'Authorization: Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjoiMGU0ZjE3ODYtZGFlZC0zZWFkLWFkNmMtM2JkYzM3ZDM5MjU2IiwiaWF0IjoxNjg5ODk4NDE1LCJleHAiOjE2ODk5MDIwMTV9.RElTPdl2_tAPX0pCneAOgPUp03O_88Fz2hVoSyIbKPqu6iwJoKIQhD_oL1aeuiZezfOTWRruSj4pflnjntDHyg'
 ```
 
-# Environment
+# Environment Project
 
 **JavaScript runtime:**
 
@@ -93,11 +94,9 @@ This project was generated with MySql Database use with [Xampp](https://www.apac
 
 This project was generated with Cache use with [Redis](https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip). 
 
-
 **Logging:**
 
 This project was generated with use with [GrayLog](https://www.graylog.org/). 
-
 
 **Infra:**
 
