@@ -76,7 +76,7 @@ curl getToken:
 curl --location 'http://localhost:3001/getToken' \
 --header 'Authorization: 0e4f1786-daed-3ead-ad6c-3bdc37d39256'
 ```
-https://github.com/rizkyefrian2706/Restfull-API-Movie/issues/1#issue-1815015339
+![gettoken](https://github.com/rizkyefrian2706/Restfull-API-Movie/assets/74532222/8bf934c4-343d-4365-b415-11d47351e528)
 
 after getting the token, use the token in the Authorization header of each api.
 sample curl get all data:
@@ -84,76 +84,47 @@ sample curl get all data:
 curl --location 'http://localhost:3001/movies' \
 --header 'Authorization: Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjoiMGU0ZjE3ODYtZGFlZC0zZWFkLWFkNmMtM2JkYzM3ZDM5MjU2IiwiaWF0IjoxNjg5ODk4NDE1LCJleHAiOjE2ODk5MDIwMTV9.RElTPdl2_tAPX0pCneAOgPUp03O_88Fz2hVoSyIbKPqu6iwJoKIQhD_oL1aeuiZezfOTWRruSj4pflnjntDHyg'
 ```
+![movies](https://github.com/rizkyefrian2706/Restfull-API-Movie/assets/74532222/8b6a5713-0cde-4792-b47f-9f517ecdcb7f)
 
-# Environment Project
-
-**JavaScript runtime:**
-
-JavaScript runtime with Node JS [Node JS](https://nodejs.org/en/) version 18.14.2
-
-**Framework Backend:**
-
-This project was generated with [Express JS](https://expressjs.com/en/starter/installing.html) version 4.18.2.
-
-**Database:**
-
-This project was generated with MySql Database use with [Xampp](https://www.apachefriends.org/download.htmll). 
-
-This project was generated with Cache use with [Redis](https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip). 
-
-**Logging:**
-
-This project was generated with use with [GrayLog](https://www.graylog.org/). 
-
-**Infra:**
-
-This project was generated with docker compose use with run [Docker Desktop Windows](https://www.docker.com/products/docker-desktop/). 
-
-
-Addon Plugin
-
-Framework Express [Framework Express](https://expressjs.com/en/starter/installing.html).
-
-```bash
-mkdir myapp
-cd myapp
-
-npm init
-npm install express
-```
-
-Build an Authentication API with JWT Token [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken).
-
-```bash
-npm install jsonwebtoken
-```
-
-(CORS) Cross Origin Resource Sharing [CORS](https://expressjs.com/en/resources/middleware/cors.html).
-
-```bash
-npm install cors
-```
-
-Cache Redis [Redis](https://www.npmjs.com/package/ioredis).
-
-```bash
-npm install ioredis
-```
-
-mysql2 [mysql2](https://www.npmjs.com/package/ioredis).
-
-```bash
-npm install mysql2
-```
-
-sequelize [sequelize](https://sequelize.org/).
-
-```bash
-npm install sequelize
-```
-
-winston [winston](https://github.com/winstonjs/winston).
-
-```bash
-npm install winston
-```
+# Documentation
+This project was generated with :
+  - [Express JS](https://expressjs.com/en/starter/installing.html) version 4.18.2.
+      
+  ```bash
+  mkdir myapp
+  cd myapp
+  
+  npm init
+  npm install express
+  ```
+  - Database with MySql, in my case using with [Xampp](https://www.apachefriends.org/download.htmll).
+  - Packages mysql2 [mysql2](https://www.npmjs.com/package/mysql2).
+  ```bash
+  npm install mysql2
+  ```
+  - Cache use with [Redis](https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip). 
+  - Packages Redis [Redis](https://www.npmjs.com/package/ioredis).
+  ```bash
+  npm install ioredis
+  ```
+  - Logging use with [GrayLog](https://www.graylog.org/). 
+  - Docker : docker compose use with run [Docker Desktop Windows](https://www.docker.com/products/docker-desktop/). 
+  - Authentication API with JWT Token [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken).
+  ```bash
+  npm install jsonwebtoken
+  ```
+  - (CORS) Cross Origin Resource Sharing [CORS](https://expressjs.com/en/resources/middleware/cors.html).
+  ```bash
+  npm install cors
+  ```
+  - sequelize [sequelize](https://sequelize.org/).
+  ```bash
+  npm install sequelize
+  ```
+  - winston [winston](https://github.com/winstonjs/winston).
+  ```bash
+  npm install winston
+  ```
+  - [winston-daily-rotate-file](https://www.npmjs.com/package/winston-daily-rotate-file)
+  - [winston-gelf](https://www.npmjs.com/package/winston-gelf)
+  - [Jest](https://www.npmjs.com/package/jest)
